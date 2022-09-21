@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 페이지</title>
+    <link rel="stylesheet" href="연습.css">
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <section class="login-form">
+        <h1>LOGO DESIGN</h1>
+        <form action="">
+            <div class="int-area">
+                <input type="text"name="id" id="id" autocomplete="off" required>
+                <label for="id">USER NAME</label>
+             <div class="int-area">
+                <input type="password"name="pw" id="pw" autocomplete="off" required>
+                <label1 for="id">PASSWORD</label1>
+            </div>
+            <div onclick=location. href='file:///C:/Users/a/Desktop/%EB%82%98%EC%9D%98%20%EB%A7%81%ED%81%AC%20%EB%AA%A8%EC%9D%8C/fontello-1ce69dc4/index.html' class="btn-area">
+                  <button id="btn" 
+                  type="submit"><a href="file:///C:/Users/a/Desktop/%EB%82%98%EC%9D%98%20%EB%A7%81%ED%81%AC%20%EB%AA%A8%EC%9D%8C/fontello-1ce69dc4/index.html">(&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp L O G I N &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp) <script onclick="alert('로그인되었습니다.')"></script></button></a>
+            </div>
+        </form>
+            <div class="caption">
+                <a href="Forgot Password?"></a>
+            </div>
+    </section>
+    <script>
+        let id = $('#id');
+        let pw = $('#pw');
+        let btn = $('#btn');
+
+        $(btn).on('click', function() {
+            if($(id).val() == "") {
+                $(id).next('label').addClass('warning');
+            }
+            else if($(id).val() == "") {
+                $(pw).next('label').addClass('warning');
+            }
+        });
+    </script>
+</body>
+</html>
